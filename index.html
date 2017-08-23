@@ -33,7 +33,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
-                navigator.serviceWorker.register('/sexy-pwa/sw.js', { scope: '/sw-test/' }).then(function (registration) {
+                navigator.serviceWorker.register('/sexy-pwa/sw.js', { scope: '/sexy-pwa/' }).then(function (registration) {
                         // Registration was successful
                         console.log('ServiceWorker registration successful with scope: ', registration.scope);
                     },
