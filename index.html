@@ -41,6 +41,8 @@
                         // registration failed :(
                         console.log('ServiceWorker registration failed: ', err);
                     });
+            }).catch(function (error) {
+                console.error(error);
             });
         }
     </script>
