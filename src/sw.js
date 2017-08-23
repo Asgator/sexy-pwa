@@ -5,4 +5,4 @@ toolbox.precache([
 ]);
 toolbox
     .router
-    .get('/sexy-pwa/img/*', toolbox.cacheFirst); toolbox.router.get('/sexy-pwa/*', toolbox.networkFirst, { networkTimeoutSeconds: 5});
+    .get('/sexy-pwa/img/*', toolbox.cacheFirst); toolbox.router.get('/*', toolbox.networkFirst, { networkTimeoutSeconds: 5});
