@@ -26,10 +26,6 @@
     <link rel="shortcut icon" href="/sexy-pwa/img/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/sexy-pwa/img/favicon/favicon.ico" type="image/x-icon">
 
-    <title>Document</title>
-</head>
-
-<body>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
@@ -41,12 +37,17 @@
                         // registration failed :(
                         console.log('ServiceWorker registration failed: ', err);
                     });
-            }, function (error) {
-                console.error(error);
             });
         }
     </script>
 
+    <link rel="stylesheet" href="/sexy-pwa/styles/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    
     <h1>
         Sexy pwa
     </h1>
