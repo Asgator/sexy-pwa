@@ -1,8 +1,8 @@
 'use strict';
-importScripts('/src/sw-toolbox.js');
+importScripts('/sexy-pwa/src/sw-toolbox.js');
 toolbox.precache([
-    'index.html', 'styles/style.css'
+    '/sexy-pwa/index.html', '/sexy-pwa/styles/style.css'
 ]);
 toolbox
     .router
-    .get('/img/*', toolbox.cacheFirst); toolbox.router.get('/*', toolbox.networkFirst, { networkTimeoutSeconds: 5});
+    .get('/sexy-pwa/img/*', toolbox.cacheFirst); toolbox.router.get('/*', toolbox.networkFirst, { networkTimeoutSeconds: 5});
