@@ -5,6 +5,8 @@
     "start_url": "/sexy-pwa/",
     "display": "standalone",
     "theme_color": "#f0b937",
+    "background_color": "#fff",
+    "description": "Trololo",
     "icons": [{
             "src": "\/sexy-pwa\/img\/favicon\/android-icon-36x36.png",
             "sizes": "36x36",
