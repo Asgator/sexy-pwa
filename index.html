@@ -26,49 +26,28 @@
     <link rel="shortcut icon" href="/sexy-pwa/img/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/sexy-pwa/img/favicon/favicon.ico" type="image/x-icon">
 
+    <link rel="stylesheet" href="/sexy-pwa/styles/style.css">
+
     <title>Document</title>
 </head>
 
 <body>
-    <script>
-window.addEventListener('beforeinstallprompt', function(e) {
-  // beforeinstallprompt Event fired
-
-  // e.userChoice will return a Promise.
-  e.userChoice.then(function(choiceResult) {
-
-    console.log(choiceResult.outcome);
-
-    if(choiceResult.outcome == 'dismissed') {
-      console.log('User cancelled home screen install');
-    }
-    else {
-      console.log('User added to home screen');
-    }
-  });
-});
-
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function () {
-                navigator.serviceWorker.register('/sexy-pwa/sw.js', { scope: '/sexy-pwa/' }).then(function (registration) {
-                        // Registration was successful
-                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                    },
-                    function (err) {
-                        // registration failed :(
-                        console.log('ServiceWorker registration failed: ', err);
-                    });
-            });
-        }
-    </script>
-
     <h1>
-        Sexy pwa
+        Sexy PWA
     </h1>
     <p>
         Hello, it is my sexy PWA!
     </p>
+    <Button disabled class="js-push-btn">Хочешь пушкануться?</Button>
     <b>Sexy Anatoly</b>
+    
+    <div style="padding-top: 20px"></div>
+
+    <section class="subscription-details js-subscription-details is-invisible">
+      <pre><code class="js-subscription-json json"></code></pre>
+    </section>
+
+    <script src="/sexy-pwa/src/main.js"></script>
 </body>
 
 </html>

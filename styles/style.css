@@ -1,3 +1,8 @@
 body {
     background: #666666;
 }
+
+.json {
+    width: 200px;
+    white-space: pre-line;
+}
