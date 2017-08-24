@@ -14,7 +14,7 @@ window.addEventListener('beforeinstallprompt', function(e) {
 });
 
 
-const applicationServerPublicKey = 'BO7nT8JRgEK-0zMA8_KDLfxqxaCnj395vk6IWwMQH_K_9Ch7c1jmcFul8vIn8rpRX2jKhpuhzsjtTTuYLnKee70';
+const applicationServerPublicKey = 'BO-G-Zyzfp7ym8YNESE-7oGx34kdJSf1LLEmPNSHous58CeAt8LEFVjs-FtRiYaH-JiyHeaKYccHaycb2GpqgkY';
 
 const pushButton = document.querySelector('.js-push-btn');
 
